@@ -1,0 +1,54 @@
+{
+  "name": "koa-demo-project",
+  "version": "0.0.1",
+  "description": "koa项目，主要为了测试一些写的中间件",
+  "main": "index.js",
+  "scripts": {
+    "start": "DEBUG=koa-demo-project:* DEBUG_COLORS=true node index.js",
+    "hot-start": "DEBUG=koa-demo-project:* DEBUG_COLORS=true nodemon index.js",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && babel src -d dist",
+    "lint": "eslint --ext .js src ",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "pre-commit": [
+    "precommit-msg",
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrSeaWave/koa-demo-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrSeaWave/koa-demo-project/issues"
+  },
+  "homepage": "https://github.com/MrSeaWave/koa-demo-project#readme",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "ip": "^1.1.5",
+    "js-yaml": "^3.13.1",
+    "koa": "^2.11.0",
+    "sprintf-js": "^1.1.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.6",
+    "@babel/polyfill": "^7.8.3",
+    "@babel/preset-env": "^7.8.6",
+    "@babel/register": "^7.8.6",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "nodemon": "^2.0.2",
+    "pre-commit": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

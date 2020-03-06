@@ -1,10 +1,12 @@
 import Koa from 'koa';
 import ip from 'ip';
+import { koaLogger } from 'sea-koa-work-logger';
 import { startLog } from './config/debuggerConfig';
 import config from './utils/config';
 const { port } = config;
 const app = new Koa();
 
+app.use(koaLogger);
 app.use(async ctx => {
   ctx.body = 'Hello World';
 });

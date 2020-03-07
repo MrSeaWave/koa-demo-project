@@ -3374,10 +3374,10 @@ safe-regex@^1.1.0:
   resolved "https://registry.npm.taobao.org/safer-buffer/download/safer-buffer-2.1.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsafer-buffer%2Fdownload%2Fsafer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha1-RPoWGwGHuVSd2Eu5GAL5vYOFzWo=
 
-sea-koa-work-logger@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/sea-koa-work-logger/-/sea-koa-work-logger-0.0.2.tgz#df293e0c57cca46ab362f320ab0e5f148304e5e2"
-  integrity sha512-4FtWHWhygiFMx5DUOhmrdhFl4LuLLC41r4WSH+TO2UN9J9vBNefqiM+F2E21tVUYYStKYOTjJlkmVOZCZuk/HA==
+sea-koa-work-logger@0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/sea-koa-work-logger/-/sea-koa-work-logger-0.0.4.tgz#40af38325df63648f9104c1144ba531074d5426b"
+  integrity sha512-QmNPGt1lYHhUZlAl2LO6+AdsF8LQrTOkiSuck7JjLHrXaYQf8EHNUeDs7uxJqv1AesKpwhx8++xk5rFO67wzEQ==
   dependencies:
     app-root-path "^3.0.0"
     chalk "^3.0.0"
